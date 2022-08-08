@@ -17,8 +17,9 @@ const aboutData = [
 ];
 const SinglePage = () => {
   const { slug } = useParams();
+  console.log(slug);
   const aboutContent = aboutData.find((item) => item.slug === slug);
-  const { title, description } = aboutContent;
+  const { title = '', description = '' } = aboutContent;
   return (
     <div>
       <h1>{title}</h1>
