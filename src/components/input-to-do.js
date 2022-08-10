@@ -28,12 +28,12 @@ const InputToDo = (props) => {
       setNewTodo('');
     }
   };
-  const leftValue = `${inputWidth / 2 - 20}px`;
+  const leftValue = `${inputWidth / 2 - 30}px`;
   const styles = {
-    bottom: '30px',
+    bottom: '35px',
     left: leftValue,
     position: 'relative',
-    height: '20px',
+    height: '30px',
   };
 
   return (
@@ -48,8 +48,14 @@ const InputToDo = (props) => {
         onKeyDown={appendToList}
         onChange={handleChange}
       />
-      <button onClick={appendToList} type="button" className="bg-success border-0 rounded text-white" id="add-icon" style={styles}>
-        <i className="fa fa-plus" />
+      <button
+        onClick={appendToList}
+        type="button"
+        className="bg-success border-0 rounded-pill text-white"
+        id="add-icon"
+        style={styles}
+      >
+        ADD
       </button>
     </div>
   );

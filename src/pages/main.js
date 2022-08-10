@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Header from './header';
-import InputToDo from './input-to-do';
-import ToDoList from './todos-list';
+import Header from '../components/header';
+import InputToDo from '../components/input-to-do';
+import ToDoList from '../components/todos-list';
 
 const Main = () => {
   const [todos, setTodos] = useState([]);

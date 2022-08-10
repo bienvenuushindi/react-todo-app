@@ -17,11 +17,10 @@ const aboutData = [
 ];
 const SinglePage = () => {
   const { slug } = useParams();
-  console.log(slug);
   const aboutContent = aboutData.find((item) => item.slug === slug);
   const { title = '', description = '' } = aboutContent;
   return (
-    <div>
+    <div className="App w-50 m-auto d-flex flex-column justify-content-center vh-100">
       <h1>{title}</h1>
       <p>{description}</p>
     </div>
