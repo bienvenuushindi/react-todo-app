@@ -20,7 +20,7 @@ const InputToDo = (props) => {
 
   const appendToList = (e) => {
     if (e.key === 'Enter' || e.target.id === 'add-icon') {
-      if (newTodo.length === 0) {
+      if (newTodo.trim().length === 0) {
         alert('Required Field');
         return;
       }
